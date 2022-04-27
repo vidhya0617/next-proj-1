@@ -1,0 +1,57 @@
+{
+  "name": "nextjs-boilerplate",
+  "version": "1.0.0",
+  "description": "Nextjs App BoilerPlate",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
+    "pretty": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\" ",
+    "libdev": "cd node_modules/next-subproject-example && npm run dev",
+    "libbuild": "cd node_modules/next-subproject-example && npm run prepare"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "12.1.5",
+    "next-subproject-example": "latest",
+    "prettier": "^2.6.2",
+    "pretty": "^2.0.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-image-card-g3": "^0.1.0",
+    "test-nextjs-package-g3": "^1.2.0",
+    "testpackageg3": "^1.0.0"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^12.1.4",
+    "@types/node": "17.0.25",
+    "@types/react": "18.0.5",
+    "@types/react-dom": "18.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "autoprefixer": "^10.4.4",
+    "dotenv": "^8.2.0",
+    "eslint": "8.13.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "12.1.5",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23",
+    "typescript": "4.6.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn build",
+      "pre-commit": "yarn pretty && yarn lint"
+    }
+  },
+  "engines": {
+    "node": ">=12.0",
+    "yarn": "^1.19.0"
+  }
+}
