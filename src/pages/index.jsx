@@ -1,10 +1,12 @@
-// import MultiLanguage from "test-nextjs-package-g3";
+import React from "react";
+
+import {Button} from "node_modules/next-lib2/dist/index.js";
 
 const Home = ({ isSSRMobileView }) => {
+  
   return (
     <>
-     hello
-     {/* <MultiLanguage /> */}
+     <Button />
     </>
   );
 };

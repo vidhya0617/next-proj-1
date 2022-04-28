@@ -8,22 +8,18 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
-    "pretty": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\" ",
-    "libdev": "cd node_modules/next-subproject-example && npm run dev",
-    "libbuild": "cd node_modules/next-subproject-example && npm run prepare"
+    "pretty": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\" "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "next": "12.1.5",
-    "next-subproject-example": "latest",
     "prettier": "^2.6.2",
     "pretty": "^2.0.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-image-card-g3": "^0.1.0",
-    "test-nextjs-package-g3": "^1.2.0",
     "testpackageg3": "^1.0.0"
   },
   "devDependencies": {
