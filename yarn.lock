@@ -1636,19 +1636,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-next-lib-g3@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/next-lib-g3/-/next-lib-g3-0.1.0.tgz#f635e37d4c59547badc3add73d19e91a639776bb"
-  integrity sha512-ccjHn5TcFVbXjows+GVK8BLCYlUzstVhnaJ4Zi4N64E0nDa9RwRp4tdAd4Q1248/1plqPBKaaH3gAopV+TsVEw==
-  dependencies:
-    autoprefixer "^10.4.5"
-    postcss "^8.4.12"
-    tailwindcss "^3.0.24"
-
-next-lib2@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/next-lib2/-/next-lib2-2.0.0.tgz#62297a3d1295c8a25d2766aa8b11c8ea3c6783e3"
-  integrity sha512-O0aAP70/qEgsnxENaOWEuVefHZtfu5RNMIr8vYdhfPvsfsOgFg11ngiTx8lwv0RzPXVi7OlQM4QWUubhELx/ww==
+next-lib-g3@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/next-lib-g3/-/next-lib-g3-0.2.0.tgz#48b5fab0d6838cce57a3b88d936c3cfcb45c8eb5"
+  integrity sha512-FPvuwDfvDJBaRjos0q2HxLGJPqUO/1BehT7+i9RKxVgeSUu++TpWU4VZKBGCFreY0mKAgAi9YePQUeCDVzsEFQ==
   dependencies:
     autoprefixer "^10.4.5"
     postcss "^8.4.12"
