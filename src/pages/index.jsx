@@ -1,30 +1,16 @@
 import React from "react";
 
-import {Button, add, getIsSSRMobileView} from "next-lib2";
+import {test, add, Button} from 'node_modules/next-lib2/dist/index'
 
-const Home = ({ isSSRMobileView }) => {
+const Home = () => {
+  console.log("vidhya test "+test(1,2))
+  console.log("vidhya add "+add())
 
-  React.useEffect(() => {
-    console.log(add())
-  }, []);
-  
   return (
     <>
-    {
-      isSSRMobileView ? 'mobile' : 'desktop'
-    }
-     <Button />
+      <Button />
     </>
   );
-};
-
-Home.getInitialProps = async (ctx) => {
- 
-  console.log("from server "+add())
-  
-  return {
-    isSSRMobileView: getIsSSRMobileView(ctx),
-  };
 };
 
 export default Home;
