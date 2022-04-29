@@ -1,30 +1,29 @@
 import React from "react";
 
-import {Button} from "next-lib2";
+import {Button, add, getIsSSRMobileView} from "next-lib2";
 
 const Home = ({ isSSRMobileView }) => {
+
+  React.useEffect(() => {
+    console.log(add())
+  }, []);
   
   return (
     <>
+    {
+      isSSRMobileView ? 'mobile' : 'desktop'
+    }
      <Button />
     </>
   );
 };
 
 Home.getInitialProps = async (ctx) => {
-  let userAgent;
-  if (ctx?.req) {
-    userAgent = ctx.req.headers["user-agent"];
-  } else {
-    userAgent = navigator.userAgent;
-  }
-  const isSSRMobileView = Boolean(
-    userAgent.match(
-      /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
-    )
-  );
+ 
+  console.log("from server "+add())
+  
   return {
-    isSSRMobileView,
+    isSSRMobileView: getIsSSRMobileView(ctx),
   };
 };
 
