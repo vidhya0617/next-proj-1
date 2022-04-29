@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Button} from "node_modules/next-lib2/dist/index.js";
+import {Button} from "next-lib2";
 
 const Home = ({ isSSRMobileView }) => {
   
