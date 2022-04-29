@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "next": "12.1.5",
-    "next-lib2": "^1.5.0",
+    "next-lib2": "^1.8.0",
     "prettier": "^2.6.2",
     "pretty": "^2.0.0",
     "react": "18.0.0",

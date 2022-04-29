@@ -448,7 +448,7 @@ ast-types-flow@^0.0.7:
   resolved "https://registry.npmjs.org/ast-types-flow/-/ast-types-flow-0.0.7.tgz"
   integrity sha1-9wtzXGvKGlycItmCw+Oef+ujva0=
 
-autoprefixer@^10.4.4:
+autoprefixer@^10.4.4, autoprefixer@^10.4.5:
   version "10.4.5"
   resolved "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.5.tgz"
   integrity sha512-Fvd8yCoA7lNX/OUllvS+aS1I7WRBclGXsepbvT8ZaPgrH24rgXpZzF0/6Hh3ZEkwg+0AES/Osd196VZmYoEFtw==
@@ -1636,10 +1636,14 @@ natural-compare@^1.4.0:
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-next-lib2@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/next-lib2/-/next-lib2-1.5.0.tgz#529da5725081f7b28bf73e5f9a7c9442a8f8416d"
-  integrity sha512-pe3U+K8FIeWExhuYMiFcSiZIf5EVWp/HwqmrVjccY0AJvREDmBnlgLbaGnx32+CW32jgpkOSx4EFAQyP+Grp5A==
+next-lib2@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/next-lib2/-/next-lib2-1.8.0.tgz#c937f97a031af54a0b5d100fed2c7a97cf30fe39"
+  integrity sha512-yFgSOA1TjxseIHUuTX0Ct+Ai2rNGf2ZtJWaOdoBZcp5VJmNcmteiZou/sBv7uHSBYkzhtey8rDjT8jX6ye1jAQ==
+  dependencies:
+    autoprefixer "^10.4.5"
+    postcss "^8.4.12"
+    tailwindcss "^3.0.24"
 
 next@12.1.5:
   version "12.1.5"
@@ -2169,7 +2173,7 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-tailwindcss@^3.0.23:
+tailwindcss@^3.0.23, tailwindcss@^3.0.24:
   version "3.0.24"
   resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.0.24.tgz"
   integrity sha512-H3uMmZNWzG6aqmg9q07ZIRNIawoiEcNFKDfL+YzOPuPsXuDXxJxB9icqzLgdzKNwjG3SAro2h9SYav8ewXNgig==
