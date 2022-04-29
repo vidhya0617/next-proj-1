@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Button} from 'node_modules/next-lib2/dist/index'
+import {Button} from 'next-lib-g3'
 
 const Home = () => {
 

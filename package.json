@@ -1,7 +1,7 @@
 {
-  "name": "nextjs-boilerplate",
+  "name": "next-proj",
   "version": "1.0.0",
-  "description": "Nextjs App BoilerPlate",
+  "description": "Nextjs App",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "next": "12.1.5",
-    "next-lib2": "^2.0.0",
+    "next-lib-g3": "^0.1.0",
     "prettier": "^2.6.2",
     "pretty": "^2.0.0",
     "react": "18.0.0",
