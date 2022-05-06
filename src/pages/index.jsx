@@ -1,19 +1,13 @@
 import React from "react";
 
-import {Button, getIsSSRMobileView} from "react-lib-g3";
+import { Button } from "next-lib-g3";
 
-const Home = ({ isSSRMobileView }) => {
+const Home = () => {
   return (
     <>
-      <p>{isSSRMobileView ? "mobile" : "desktop"}</p>
-      <Button text='click here'/>
+      <Button />
     </>
   );
-};
-
-Home.getInitialProps = async (ctx) => {
-
-  return { isSSRMobileView: getIsSSRMobileView(ctx) };
 };
 
 export default Home;
