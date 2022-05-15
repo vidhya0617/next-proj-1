@@ -8,17 +8,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
-    "pretty": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\" "
+    "prettify": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\" "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "next": "12.1.5",
-    "prettier": "^2.6.2",
-    "pretty": "^2.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "prettier": "^2.6.2"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^12.1.4",
