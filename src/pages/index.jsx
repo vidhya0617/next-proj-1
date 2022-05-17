@@ -122,58 +122,110 @@ const announcementsData = [
     btnText: "Shop Now",
   },
 ];
+const liveVideosData = [
+  {
+    id: "video_1",
+    videoThumbnailUrl: "https://img.youtube.com/vi/a8DGwq43KC0/sddefault.jpg",
+    videoTitle: "Mothers For Mother Earth",
+    noOfViews: "95.7K",
+  },
+  {
+    id: "video_2",
+    videoThumbnailUrl: "https://img.youtube.com/vi/AZ54cRhVQh8/sddefault.jpg",
+    videoTitle: `You'll be surprised the number of times women and mothers are asked to "settle down" and compromise`,
+    noOfViews: "95.6K",
+  },
+  {
+    id: "video_3",
+    videoThumbnailUrl: "https://img.youtube.com/vi/SDAyBYtawtM/sddefault.jpg",
+    videoTitle: `5 Reasons Why BabyChakra's Home & Pure Range is the Best and Safest addition for your family's hy`,
+    noOfViews: "171.2K",
+  },
+  {
+    id: "video_4",
+    videoThumbnailUrl: "https://img.youtube.com/vi/RtMPB-_1khw/sddefault.jpg",
+    videoTitle: `Know more about our BESTSELLER - Mom and Baby Safety Kit
+    #safetykit  #bestseller  #perfectgift  #hand`,
+    noOfViews: "148.7K",
+  },
+  {
+    id: "video_5",
+    videoThumbnailUrl: "https://img.youtube.com/vi/FHxFuk6rDTA/sddefault.jpg",
+    videoTitle: `"We don't want you to compromise on your child's health &amp; immunity",Do you still use unsafe, harsh `,
+    noOfViews: "148.7K",
+  },
+];
 const Home = () => {
   return (
-    <div className="p-6">
-      <div className="md:w-[300px] my-4">
-        <ChooseFeed feedItem={feedItem} />
-      </div>
-      <div className="md:w-[388px] my-4">
-        <RelatedQuestions relatedQuestions={relatedQuestions} />
-      </div>
-      <div className="md:w-[540px] my-4">
-        <AnnouncementCard announcementsData={announcementsData} />
-      </div>
-      <div className="md:w-[540px] my-4">
-        <ArticleCard
-          authorName="Dr Astha Nagpal"
-          authorImgUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
-          authorProfileLink="https://www.babychakra.com/user/MjU4MDc0NA"
-          subtitle="Author (0 Articles)"
-          articleCoverUrl="https://bbc-wp-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2022/05/10170607/Nayana-1.jpg"
-          articleTitle="Pregnancy – A Mutual Commitment To Parenthood"
-          minsToRead={2}
-          noOfViews={3}
-        />
-      </div>
-      <div className="md:w-[540px] my-4">
-        <LiveVideoCard />
-      </div>
-      <div className="md:w-[540px]  my-4">
-        <QuestionCard
-          question="I want to return my parcel"
-          postedUserName={"Anonymous"}
-          userProfilePictureUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
-          noOfViews={280}
-          userImgUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
-          commentsList={commentsList}
-        />
-      </div>
-      <div className="md:w-[540px]  my-4">
-        <FeedCard
-          authorName="Babychakra"
-          authorImgUrl="https://cdn-sp.babychakra.com/users/original/61518/profile_5903280f43735.jpg"
-          authorProfileLink="https://www.babychakra.com/user/NjE2MTc"
-          feedContent={description}
-          imgUrls={imgUrls}
-          cardType="image"
-          likeCount={174}
-          saveCount={56}
-          shareCount={0}
-          // videoEmbedId="19tLCuXupl8"
-          // cardType="video"
-          commentsList={commentsList}
-        />
+    <div className="p-20">
+      <div className="home-page-wrapper">
+        <div>
+          <ChooseFeed feedItem={feedItem} onClickFeed={() => {}} />
+        </div>
+
+        <div>
+          <FeedCard
+            wrapperClassName="mb-3"
+            authorName="Babychakra"
+            authorImgUrl="https://cdn-sp.babychakra.com/users/original/61518/profile_5903280f43735.jpg"
+            authorProfileLink="https://www.babychakra.com/user/NjE2MTc"
+            feedContent={description}
+            imgUrls={imgUrls}
+            cardType="image"
+            likeCount={174}
+            saveCount={56}
+            shareCount={0}
+            commentsList={commentsList}
+          />
+          <FeedCard
+            wrapperClassName="mb-3"
+            authorName="Babychakra"
+            authorImgUrl="https://cdn-sp.babychakra.com/users/original/61518/profile_5903280f43735.jpg"
+            authorProfileLink="https://www.babychakra.com/user/NjE2MTc"
+            feedContent={description}
+            likeCount={174}
+            saveCount={56}
+            shareCount={0}
+            videoEmbedId="19tLCuXupl8"
+            cardType="video"
+            commentsList={commentsList}
+          />
+          <AnnouncementCard
+            announcementsData={announcementsData}
+            wrapperClassName="mb-3"
+          />
+          <ArticleCard
+            wrapperClassName="mb-3"
+            authorName="Dr Astha Nagpal"
+            authorImgUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
+            authorProfileLink="https://www.babychakra.com/user/MjU4MDc0NA"
+            subtitle="Author (0 Articles)"
+            articleCoverUrl="https://bbc-wp-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2022/05/10170607/Nayana-1.jpg"
+            articleTitle="Pregnancy – A Mutual Commitment To Parenthood"
+            minsToRead={2}
+            noOfViews={3}
+          />
+          <LiveVideoCard
+            liveVideosData={liveVideosData}
+            wrapperClassName="mb-3"
+          />
+          <QuestionCard
+            wrapperClassName="mb-3"
+            question="I want to return my parcel"
+            postedUserName={"Anonymous"}
+            userProfilePictureUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
+            noOfViews={280}
+            userImgUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
+            commentsList={commentsList}
+          />
+        </div>
+
+        <div>
+          <RelatedQuestions
+            relatedQuestions={relatedQuestions}
+            wrapperClassName="mb-3"
+          />
+        </div>
       </div>
     </div>
   );
