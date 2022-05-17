@@ -5,9 +5,11 @@ import {
   LiveVideoCard,
   QuestionCard,
   ArticleCard,
-  ChooseFeed,
+  ChooseFeedDesktopTab,
+  ChooseFeedMobileTab,
   AnnouncementCard,
   RelatedQuestions,
+  getIsSSRMobileView,
 } from "next-lib-g3";
 
 const relatedQuestions = [
@@ -155,80 +157,99 @@ const liveVideosData = [
     noOfViews: "148.7K",
   },
 ];
-const Home = () => {
+const Home = (props) => {
+  const { isMobile } = props;
   return (
-    <div className="p-20">
-      <div className="home-page-wrapper">
+    <>
+      {isMobile ? (
         <div>
-          <ChooseFeed feedItem={feedItem} onClickFeed={() => {}} />
+          <ChooseFeedMobileTab feedItem={feedItem} onClickFeed={() => {}} />
         </div>
+      ) : null}
+      <div className="p-20">
+        <div className="home-page-wrapper">
+          {!isMobile ? (
+            <div>
+              <ChooseFeedDesktopTab
+                feedItem={feedItem}
+                onClickFeed={() => {}}
+              />
+            </div>
+          ) : null}
 
-        <div>
-          <FeedCard
-            wrapperClassName="mb-3"
-            authorName="Babychakra"
-            authorImgUrl="https://cdn-sp.babychakra.com/users/original/61518/profile_5903280f43735.jpg"
-            authorProfileLink="https://www.babychakra.com/user/NjE2MTc"
-            feedContent={description}
-            imgUrls={imgUrls}
-            cardType="image"
-            likeCount={174}
-            saveCount={56}
-            shareCount={0}
-            commentsList={commentsList}
-          />
-          <FeedCard
-            wrapperClassName="mb-3"
-            authorName="Babychakra"
-            authorImgUrl="https://cdn-sp.babychakra.com/users/original/61518/profile_5903280f43735.jpg"
-            authorProfileLink="https://www.babychakra.com/user/NjE2MTc"
-            feedContent={description}
-            likeCount={174}
-            saveCount={56}
-            shareCount={0}
-            videoEmbedId="19tLCuXupl8"
-            cardType="video"
-            commentsList={commentsList}
-          />
-          <AnnouncementCard
-            announcementsData={announcementsData}
-            wrapperClassName="mb-3"
-          />
-          <ArticleCard
-            wrapperClassName="mb-3"
-            authorName="Dr Astha Nagpal"
-            authorImgUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
-            authorProfileLink="https://www.babychakra.com/user/MjU4MDc0NA"
-            subtitle="Author (0 Articles)"
-            articleCoverUrl="https://bbc-wp-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2022/05/10170607/Nayana-1.jpg"
-            articleTitle="Pregnancy – A Mutual Commitment To Parenthood"
-            minsToRead={2}
-            noOfViews={3}
-          />
-          <LiveVideoCard
-            liveVideosData={liveVideosData}
-            wrapperClassName="mb-3"
-          />
-          <QuestionCard
-            wrapperClassName="mb-3"
-            question="I want to return my parcel"
-            postedUserName={"Anonymous"}
-            userProfilePictureUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
-            noOfViews={280}
-            userImgUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
-            commentsList={commentsList}
-          />
-        </div>
+          <div>
+            <FeedCard
+              wrapperClassName="mb-3"
+              authorName="Babychakra"
+              authorImgUrl="https://cdn-sp.babychakra.com/users/original/61518/profile_5903280f43735.jpg"
+              authorProfileLink="https://www.babychakra.com/user/NjE2MTc"
+              feedContent={description}
+              imgUrls={imgUrls}
+              cardType="image"
+              likeCount={174}
+              saveCount={56}
+              shareCount={0}
+              commentsList={commentsList}
+            />
+            <FeedCard
+              wrapperClassName="mb-3"
+              authorName="Babychakra"
+              authorImgUrl="https://cdn-sp.babychakra.com/users/original/61518/profile_5903280f43735.jpg"
+              authorProfileLink="https://www.babychakra.com/user/NjE2MTc"
+              feedContent={description}
+              likeCount={174}
+              saveCount={56}
+              shareCount={0}
+              videoEmbedId="19tLCuXupl8"
+              cardType="video"
+              commentsList={commentsList}
+            />
+            <AnnouncementCard
+              announcementsData={announcementsData}
+              wrapperClassName="mb-3"
+            />
+            <ArticleCard
+              wrapperClassName="mb-3"
+              authorName="Dr Astha Nagpal"
+              authorImgUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
+              authorProfileLink="https://www.babychakra.com/user/MjU4MDc0NA"
+              subtitle="Author (0 Articles)"
+              articleCoverUrl="https://bbc-wp-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2022/05/10170607/Nayana-1.jpg"
+              articleTitle="Pregnancy – A Mutual Commitment To Parenthood"
+              minsToRead={2}
+              noOfViews={3}
+            />
+            <LiveVideoCard
+              liveVideosData={liveVideosData}
+              wrapperClassName="mb-3"
+            />
+            <QuestionCard
+              wrapperClassName="mb-3"
+              question="I want to return my parcel"
+              postedUserName={"Anonymous"}
+              userProfilePictureUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
+              noOfViews={280}
+              userImgUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
+              commentsList={commentsList}
+            />
+          </div>
 
-        <div>
-          <RelatedQuestions
-            relatedQuestions={relatedQuestions}
-            wrapperClassName="mb-3"
-          />
+          <div>
+            <RelatedQuestions
+              relatedQuestions={relatedQuestions}
+              wrapperClassName="mb-3"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
+};
+
+Home.getInitialProps = async (context) => {
+  return {
+    isMobile: getIsSSRMobileView(context),
+  };
 };
 
 export default Home;
