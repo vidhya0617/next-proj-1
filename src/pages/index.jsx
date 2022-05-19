@@ -297,9 +297,18 @@ const Home = (props) => {
               cardType="video"
               commentsList={commentsList}
             />
-            <AnnouncementCard
-              announcementsData={announcementsData}
+            <LiveVideoCard
+              liveVideosData={liveVideosData}
               wrapperClassName="mb-3"
+            />
+            <QuestionCard
+              wrapperClassName="mb-3"
+              question="I want to return my parcel"
+              postedUserName={"Anonymous"}
+              userProfilePictureUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
+              noOfViews={280}
+              userImgUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
+              commentsList={commentsList}
             />
             <ArticleCard
               wrapperClassName="mb-3"
@@ -314,18 +323,9 @@ const Home = (props) => {
               minsToRead={2}
               noOfViews={3}
             />
-            <LiveVideoCard
-              liveVideosData={liveVideosData}
+            <AnnouncementCard
+              announcementsData={announcementsData}
               wrapperClassName="mb-3"
-            />
-            <QuestionCard
-              wrapperClassName="mb-3"
-              question="I want to return my parcel"
-              postedUserName={"Anonymous"}
-              userProfilePictureUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
-              noOfViews={280}
-              userImgUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
-              commentsList={commentsList}
             />
           </div>
           <div>
