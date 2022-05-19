@@ -10,7 +10,56 @@ import {
   AnnouncementCard,
   RelatedQuestions,
   getIsSSRMobileView,
+  JourneyCard,
+  RecommendedArticle,
+  DailyTipAccordian,
+  DownloadAppContent,
 } from "next-lib-g3";
+
+const tipSubtitle = "4 months old baby";
+const startTipImgUrl =
+  "https://cdn-sp.babychakra.com/metric_images/original/daily_section/timeline_start_new_parent.png";
+const endTipImgUrl =
+  "https://cdn-sp.babychakra.com/metric_images/original/daily_section/timeline_end_new_parent.png";
+const selectedScaleUnit = "18";
+const scale = 38;
+
+const tipsData = [
+  {
+    id: "tip_1",
+    cardType: "daily_card",
+    tipImage:
+      "https://cdn-sp.babychakra.com/metric_images/original/1290/metric_623058d289757.png",
+    title: "TIP FOR YOU TODAY",
+    content: `Your baby should be here anytime! Did you know that your baby is
+    expected to weight between 2.5 to 3.5 kg at birth and will be probably
+    about 20 inch`,
+  },
+  {
+    id: "tip_2",
+    cardType: "development_card",
+    tipImage:
+      "https://cdn-sp.babychakra.com/metric_images/original/8349/metric_5db28196eb0d5.jpg",
+    title: "Fetal Development: Week 38",
+    content: `Baby can stretch out arms and legs`,
+  },
+  {
+    id: "tip_3",
+    cardType: "daily_card",
+    tipImage:
+      "https://cdn-sp.babychakra.com/metric_images/original/pregnancy_tracker_activities.png",
+    title: "Pregnancy Tracker: Activity",
+    content: `It's time to switch your reading priorities from pregnancy to baby now. You won't have the time to read as much once the baby comes in so`,
+  },
+  {
+    id: "tip_4",
+    cardType: "daily_card",
+    tipImage:
+      "https://cdn-sp.babychakra.com/metric_images/original/6935/metric_5b48872519cd4.jpg",
+    title: "Trimester 2: Cervical Length Scan",
+    content: `Cervical Length Scan - "Scan recommended from 16-20 weeks This scan is performed for moms with high risk factors. Your cervix connects your womb with your`,
+  },
+];
 
 const relatedQuestions = [
   {
@@ -157,6 +206,26 @@ const liveVideosData = [
     noOfViews: "148.7K",
   },
 ];
+const journeyList = [
+  {
+    id: "new_parents",
+    heading: "New Parents",
+    subheading: "I am outside with you",
+    imgUrl: "https://cdn-df.babychakra.com/lifestage/4.svg",
+  },
+  {
+    id: "toddlers",
+    heading: "Toddlers",
+    subheading: "Mom i am crawling",
+    imgUrl: "https://cdn-df.babychakra.com/lifestage/5.svg",
+  },
+  {
+    id: "pregnant",
+    heading: "Pregnant",
+    subheading: "I am still in your womb",
+    imgUrl: "https://cdn-df.babychakra.com/lifestage/6.svg",
+  },
+];
 const Home = (props) => {
   const { isMobile } = props;
   return (
@@ -178,6 +247,38 @@ const Home = (props) => {
           ) : null}
 
           <div>
+            <div className="recommended-article-wrapper">
+              <div>
+                <RecommendedArticle
+                  wrapperClassName="mb-3"
+                  authorName="Dr Astha Nagpal"
+                  authorImgUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
+                  authorProfileLink="https://www.babychakra.com/user/MjU4MDc0NA"
+                  subheadings={{
+                    postedOn: "3 months ago",
+                    noOfMinRead: 4,
+                  }}
+                  articleCoverUrl="https://bbc-wp-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2022/05/10170607/Nayana-1.jpg"
+                  articleTitle="Pregnancy – A Mutual Commitment To Parenthood"
+                  noOfViews={3}
+                />
+              </div>
+              <div>
+                <RecommendedArticle
+                  wrapperClassName="mb-3"
+                  authorName="Dr Astha Nagpal"
+                  authorImgUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
+                  authorProfileLink="https://www.babychakra.com/user/MjU4MDc0NA"
+                  subheadings={{
+                    postedOn: "3 months ago",
+                    noOfMinRead: 4,
+                  }}
+                  articleCoverUrl="https://bbc-wp-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2022/05/10170607/Nayana-1.jpg"
+                  articleTitle="Pregnancy – A Mutual Commitment To Parenthood"
+                  noOfViews={3}
+                />
+              </div>
+            </div>
             <FeedCard
               wrapperClassName="mb-3"
               authorName="Babychakra"
@@ -213,7 +314,9 @@ const Home = (props) => {
               authorName="Dr Astha Nagpal"
               authorImgUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
               authorProfileLink="https://www.babychakra.com/user/MjU4MDc0NA"
-              subtitle="Author (0 Articles)"
+              subheadings={{
+                noOfArticlesPublished: 5,
+              }}
               articleCoverUrl="https://bbc-wp-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2022/05/10170607/Nayana-1.jpg"
               articleTitle="Pregnancy – A Mutual Commitment To Parenthood"
               minsToRead={2}
@@ -235,6 +338,25 @@ const Home = (props) => {
           </div>
 
           <div>
+            <DownloadAppContent
+              question="Do you have any questions about your pregnancy?"
+              downloadTxt="Download the BabyChakra App for"
+              list={[
+                "Answers from Parents & Experts",
+                "Personalised Tips",
+                "One-on-one chats with Experts",
+              ]}
+            />
+            <DailyTipAccordian
+              tipsData={tipsData}
+              wrapperClassName="mb-2"
+              tipSubtitle={tipSubtitle}
+              startTipImgUrl={startTipImgUrl}
+              endTipImgUrl={endTipImgUrl}
+              selectedScaleUnit={selectedScaleUnit}
+              scale={scale}
+            />
+            <JourneyCard wrapperClassName="mb-3" journeyList={journeyList} />
             <RelatedQuestions
               relatedQuestions={relatedQuestions}
               wrapperClassName="mb-3"
