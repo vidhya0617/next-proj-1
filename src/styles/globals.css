@@ -3,14 +3,11 @@
 @tailwind utilities;
 
 .home-page-wrapper {
-  display: grid;
-  grid-template-columns: 25% 45% 30%;
-  grid-column-gap: 30px;
-  grid-auto-columns: minmax(min-content, max-content);
+  grid-template-columns: 1fr minmax(0, 2.5fr) minmax(0, 1.5fr);
 }
 
-.recommended-article-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10px;
+@media (max-width: 767px) {
+  .home-page-wrapper {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }

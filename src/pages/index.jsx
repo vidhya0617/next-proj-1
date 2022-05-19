@@ -231,23 +231,15 @@ const Home = (props) => {
   return (
     <>
       {isMobile ? (
-        <div>
-          <ChooseFeedMobileTab feedItem={feedItem} onClickFeed={() => {}} />
-        </div>
+        <ChooseFeedMobileTab feedItem={feedItem} onClickFeed={() => {}} />
       ) : null}
       <div className="p-20">
-        <div className="home-page-wrapper">
+        <div className="grid gap-5 items-start home-page-wrapper">
           {!isMobile ? (
-            <div>
-              <ChooseFeedDesktopTab
-                feedItem={feedItem}
-                onClickFeed={() => {}}
-              />
-            </div>
+            <ChooseFeedDesktopTab feedItem={feedItem} onClickFeed={() => {}} />
           ) : null}
-
           <div>
-            <div className="recommended-article-wrapper">
+            <div className="grid grid-cols-2 gap-x-2.5 ">
               <div>
                 <RecommendedArticle
                   wrapperClassName="mb-3"
@@ -336,7 +328,6 @@ const Home = (props) => {
               commentsList={commentsList}
             />
           </div>
-
           <div>
             <DownloadAppContent
               question="Do you have any questions about your pregnancy?"
@@ -346,10 +337,11 @@ const Home = (props) => {
                 "Personalised Tips",
                 "One-on-one chats with Experts",
               ]}
+              wrapperClassName="mb-2"
             />
             <DailyTipAccordian
               tipsData={tipsData}
-              wrapperClassName="mb-2"
+              wrapperClassName="my-2"
               tipSubtitle={tipSubtitle}
               startTipImgUrl={startTipImgUrl}
               endTipImgUrl={endTipImgUrl}
