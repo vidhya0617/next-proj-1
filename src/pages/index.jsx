@@ -1,10 +1,8 @@
 import React from "react";
 
 import {
-  FeedCard,
   LiveVideoCard,
   QuestionCard,
-  ArticleCard,
   ChooseFeedDesktopTab,
   ChooseFeedMobileTab,
   AnnouncementCard,
@@ -271,32 +269,7 @@ const Home = (props) => {
                 />
               </div>
             </div>
-            <FeedCard
-              wrapperClassName="mb-3"
-              authorName="Babychakra"
-              authorImgUrl="https://cdn-sp.babychakra.com/users/original/61518/profile_5903280f43735.jpg"
-              authorProfileLink="https://www.babychakra.com/user/NjE2MTc"
-              feedContent={description}
-              imgUrls={imgUrls}
-              cardType="image"
-              likeCount={174}
-              saveCount={56}
-              shareCount={0}
-              commentsList={commentsList}
-            />
-            <FeedCard
-              wrapperClassName="mb-3"
-              authorName="Babychakra"
-              authorImgUrl="https://cdn-sp.babychakra.com/users/original/61518/profile_5903280f43735.jpg"
-              authorProfileLink="https://www.babychakra.com/user/NjE2MTc"
-              feedContent={description}
-              likeCount={174}
-              saveCount={56}
-              shareCount={0}
-              videoEmbedId="19tLCuXupl8"
-              cardType="video"
-              commentsList={commentsList}
-            />
+
             <LiveVideoCard
               liveVideosData={liveVideosData}
               wrapperClassName="mb-3"
@@ -310,19 +283,7 @@ const Home = (props) => {
               userImgUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
               commentsList={commentsList}
             />
-            <ArticleCard
-              wrapperClassName="mb-3"
-              authorName="Dr Astha Nagpal"
-              authorImgUrl="https://cdn-sp.babychakra.com/users/default-gender-2.png"
-              authorProfileLink="https://www.babychakra.com/user/MjU4MDc0NA"
-              subheadings={{
-                noOfArticlesPublished: 5,
-              }}
-              articleCoverUrl="https://bbc-wp-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2022/05/10170607/Nayana-1.jpg"
-              articleTitle="Pregnancy – A Mutual Commitment To Parenthood"
-              minsToRead={2}
-              noOfViews={3}
-            />
+
             <AnnouncementCard
               announcementsData={announcementsData}
               wrapperClassName="mb-3"
