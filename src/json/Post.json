@@ -1,0 +1,46 @@
+{
+  "_id": "60bdad1829215f7bf48d213a",
+  "vendorCode": "bbc",
+  "country": "IND",
+  "parentId": "61541dac320ee700147a267f",
+  "title": "Title of the post",
+  "text": "Hi, [cm:member:61541dac320ee700147a267f] Long text of the post, Long text of the post",
+  "media": [
+    {
+      "mediaType": "image",
+      "url": "https://cdn.babychakra.com/image.png"
+    }
+  ],
+  "link": null,
+  "commentCount": 12,
+  "reactionsCount": 12,
+  "saveCount": 12,
+  "shareCount": 12,
+  "postType": "post",
+  "status": "published",
+  "isAnonymous": false,
+  "member": {
+    "id": "61541dac320ee700147a267f",
+    "userName": "Nitin Sadaphule",
+    "userImage": "https://cdn.babychakra.com/files.myglamm.com/original/group6%403x.png"
+  },
+  "group": {
+    "id": "61541dac320ee700147a287f",
+    "name": "New Parents",
+    "postVisibility": "member"
+  },
+  "contentMapping": [
+    {
+      "title": "Nitin Sadaphule",
+      "entityType": "member",
+      "entityId": "61541dac320ee700147a267f",
+      "deeplink": "http://app.babychakra.com/web/aHR0cHM6Ly9zaG9wLmJhYnljaGFrcmEuY29tL2NvbGxlY3Rpb24vYmFieWNoYWtyYQ=="
+    }
+  ],
+  "tags": [
+    {
+      "id": "61541dac320ee700147a287f",
+      "name": "#hashtag"
+    }
+  ]
+}

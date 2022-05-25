@@ -1,0 +1,187 @@
+[
+  {
+    "_id": "60bdad1829215f7bf48d213a1",
+    "vendorCode": "bbc",
+    "country": "IND",
+    "title": "Title of the post",
+    "text": "<div class=\"description\"><p><strong>Hi [cm:member:61541dac320ee700147a267f] It's Time For Some&nbsp;Chai Pe Charcha with Saakshi Mehra, Owner Of Mom's Memoiirs Studio</strong></p><br>\n<p><strong>Host:</strong>&nbsp;Dr&nbsp;Pooja&nbsp;Marathe,&nbsp;Community Expert - Lactation &amp; Nutrition</p><br>\n<p>Date: 18th May 2022<br>Timing: 5:00 pm - 5:30 pm<br>Topic: Mom's Memoiirs - Wear Her Care</p><br>\n<p>So stay tuned and do not forget to join the live session.</p><br>\n<p><strong><a style=\"text-decoration: none;\" href=\"http://app.babychakra.com/hashtag/chaipecharcha\"><span style=\"color: #2b5998;\">#</span><span style=\"color: #2b5998;\">chaipecharcha</span></a></strong> <strong><a style=\"text-decoration: none;\" href=\"http://app.babychakra.com/hashtag/realexperiences\"><span style=\"color: #2b5998;\">#</span><span style=\"color: #2b5998;\">realexperiences</span></a></strong> <strong><a style=\"text-decoration: none;\" href=\"http://app.babychakra.com/hashtag/positiveposts\"><span style=\"color: #2b5998;\">#</span><span style=\"color: #2b5998;\">positiveposts</span></a></strong></p><br>\n <b><a style=\"text-decoration:none\" href=\"http://app.babychakra.com/hashtag/chaipecharcha\"><font color=\"#2b5998\"><span>#</span></font><font color=\"#2b5998\">chaipecharcha</font></a></b>  <b><a style=\"text-decoration:none\" href=\"http://app.babychakra.com/hashtag/realexperiences\"><font color=\"#2b5998\"><span>#</span></font><font color=\"#2b5998\">realexperiences</font></a></b>  <b><a style=\"text-decoration:none\" href=\"http://app.babychakra.com/hashtag/positiveposts\"><font color=\"#2b5998\"><span>#</span></font><font color=\"#2b5998\">positiveposts</font></a></b> </div>",
+    "media": [
+      {
+        "mediaType": "image",
+        "url": "https://cdn-sp.babychakra.com/feedpost/original/feedpost_587627a85a564489.jpeg"
+      }
+    ],
+    "link": null,
+    "commentCount": 12,
+    "reactionsCount": 1,
+    "saveCount": 1,
+    "shareCount": 0,
+    "postType": "post",
+    "status": "published",
+    "isAnonymous": false,
+    "member": {
+      "id": "61541dac320ee700147a267f",
+      "userName": "Dr Pooja Marathe",
+      "userImage": "https://cdn-sp.babychakra.com/users/original/2307489/profile_6268e768bd51c.jpeg"
+    },
+    "group": {
+      "id": "61541dac320ee700147a287f",
+      "name": "New Parents",
+      "postVisibility": "member"
+    },
+    "contentMapping": [
+      {
+        "title": "Nitin Sadaphule",
+        "entityType": "member",
+        "entityId": "61541dac320ee700147a267f",
+        "deeplink": "http://app.babychakra.com/web/aHR0cHM6Ly9zaG9wLmJhYnljaGFrcmEuY29tL2NvbGxlY3Rpb24vYmFieWNoYWtyYQ=="
+      }
+    ],
+    "tags": [
+      {
+        "id": "61541dac320ee700147a287f",
+        "name": "#hashtag"
+      }
+    ]
+  },
+  {
+    "_id": "60bdad1829215f7bf48d213a2",
+    "vendorCode": "bbc",
+    "country": "IND",
+    "title": "Title of the post",
+    "text": "<div class=\"description\"><p>Guess what's being prepared with love for your little ones at BabyChakra next \u2764\ufe0f</p><br>\n<p>Do let us know in the comment section \ud83d\udc47</p><br>\n <b><a style=\"text-decoration:none\" href=\"http://app.babychakra.com/hashtag/CareComesFirst\"><font color=\"#2b5998\"><span>#</span></font><font color=\"#2b5998\">CareComesFirst</font></a></b>  <b><a style=\"text-decoration:none\" href=\"http://app.babychakra.com/hashtag/childsafety\"><font color=\"#2b5998\"><span>#</span></font><font color=\"#2b5998\">childsafety</font></a></b>  <b><a style=\"text-decoration:none\" href=\"http://app.babychakra.com/hashtag/babycareandhygiene\"><font color=\"#2b5998\"><span>#</span></font><font color=\"#2b5998\">babycareandhygiene</font></a></b> </div>",
+    "media": [
+      {
+        "mediaType": "video",
+        "url": "https://www.youtube.com/embed/19tLCuXupl8"
+      }
+    ],
+    "link": null,
+    "commentCount": 12,
+    "reactionsCount": 1,
+    "saveCount": 1,
+    "shareCount": 0,
+    "postType": "post",
+    "status": "published",
+    "isAnonymous": false,
+    "member": {
+      "id": "61541dac320ee700147a267f",
+      "userName": "BabyChakra",
+      "userImage": "https://cdn-sp.babychakra.com/users/original/61518/profile_5903280f43735.jpg"
+    },
+    "group": {
+      "id": "61541dac320ee700147a287f",
+      "name": "New Parents",
+      "postVisibility": "member"
+    },
+    "contentMapping": [
+      {
+        "title": "Nitin Sadaphule",
+        "entityType": "member",
+        "entityId": "61541dac320ee700147a267f",
+        "deeplink": "http://app.babychakra.com/web/aHR0cHM6Ly9zaG9wLmJhYnljaGFrcmEuY29tL2NvbGxlY3Rpb24vYmFieWNoYWtyYQ=="
+      }
+    ],
+    "tags": [
+      {
+        "id": "61541dac320ee700147a287f",
+        "name": "#hashtag"
+      }
+    ]
+  },
+  {
+    "_id": "60bdad1829215f7bf48d213a3",
+    "vendorCode": "bbc",
+    "country": "IND",
+    "title": "Title of the post",
+    "text": "<div class=\"description\"><p>Hi [cm:member:61541dac320ee700147a267f] Guess what's being prepared with love for your little ones at BabyChakra next \u2764\ufe0f</p><br>\n<p>Do let us know in the comment section \ud83d\udc47</p><br>\n <b><a style=\"text-decoration:none\" href=\"http://app.babychakra.com/hashtag/CareComesFirst\"><font color=\"#2b5998\"><span>#</span></font><font color=\"#2b5998\">CareComesFirst</font></a></b>  <b><a style=\"text-decoration:none\" href=\"http://app.babychakra.com/hashtag/childsafety\"><font color=\"#2b5998\"><span>#</span></font><font color=\"#2b5998\">childsafety</font></a></b>  <b><a style=\"text-decoration:none\" href=\"http://app.babychakra.com/hashtag/babycareandhygiene\"><font color=\"#2b5998\"><span>#</span></font><font color=\"#2b5998\">babycareandhygiene</font></a></b> </div>",
+    "media": [
+      {
+        "mediaType": "image",
+        "url": "https://cdn-sp.babychakra.com/feedpost/original/feedpost_119627928e60027f.jpeg"
+      },
+      {
+        "mediaType": "image",
+        "url": "https://cdn-sp.babychakra.com/feedpost/original/175816/feedpost_22861c2b9ddb067b"
+      }
+    ],
+    "link": null,
+    "commentCount": 12,
+    "reactionsCount": 12,
+    "saveCount": 12,
+    "shareCount": 12,
+    "postType": "post",
+    "status": "published",
+    "isAnonymous": false,
+    "member": {
+      "id": "61541dac320ee700147a267f",
+      "userName": "Babychakra",
+      "userImage": "https://cdn-sp.babychakra.com/users/original/61518/profile_5903280f43735.jpg"
+    },
+    "group": {
+      "id": "61541dac320ee700147a287f",
+      "name": "New Parents",
+      "postVisibility": "member"
+    },
+    "contentMapping": [
+      {
+        "title": "Nitin Sadaphule",
+        "entityType": "member",
+        "entityId": "61541dac320ee700147a267f",
+        "deeplink": "http://app.babychakra.com/web/aHR0cHM6Ly9zaG9wLmJhYnljaGFrcmEuY29tL2NvbGxlY3Rpb24vYmFieWNoYWtyYQ=="
+      }
+    ],
+    "tags": [
+      {
+        "id": "61541dac320ee700147a287f",
+        "name": "#hashtag"
+      }
+    ]
+  },
+  {
+    "_id": "60bdad1829215f7bf48d213a4",
+    "vendorCode": "bbc",
+    "country": "IND",
+    "parentId": "61541dac320ee700147a267f",
+    "title": "Title of the post",
+    "text": "Hi, [cm:member:61541dac320ee700147a267f] Long text of the post, Long text of the post",
+    "media": null,
+    "link": {
+      "title": "Pregnancy – A Mutual Commitment To Parenthood",
+      "description": "Description of one great article shared, description of one great article shared",
+      "image": "https://bbc-wp-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2022/05/10170607/Nayana-1.jpg",
+      "url": "https://cdn.babychakra.com/article-123"
+    },
+    "commentCount": 12,
+    "reactionsCount": 12,
+    "saveCount": 12,
+    "shareCount": 12,
+    "postType": "article",
+    "status": "unpublished",
+    "isAnonymous": false,
+    "member": {
+      "id": "61541dac320ee700147a267f",
+      "userName": "Dr Astha Nagpal",
+      "userImage": "https://cdn-sp.babychakra.com/users/default-gender-2.png"
+    },
+    "group": {
+      "id": "61541dac320ee700147a287f",
+      "name": "New Parents",
+      "postVisibility": "member"
+    },
+    "contentMapping": [
+      {
+        "title": "Nitin Sadaphule",
+        "entityType": "member",
+        "entityId": "61541dac320ee700147a267f",
+        "deeplink": "http://app.babychakra.com/web/aHR0cHM6Ly9zaG9wLmJhYnljaGFrcmEuY29tL2NvbGxlY3Rpb24vYmFieWNoYWtyYQ=="
+      }
+    ],
+    "tags": [
+      {
+        "id": "61541dac320ee700147a287f",
+        "name": "#hashtag"
+      }
+    ]
+  }
+]
